@@ -1,0 +1,6 @@
+ <div>
+ <%= @user.username %>
+ </div>
+
+   <!-- #traera :products segun user_id y tenemos que especificar en donde en este caso en products_path-->
+    <%=turbo_frame_tag :products,src: products_path(user_id: @user.id)%>

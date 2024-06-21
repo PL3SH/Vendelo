@@ -1,0 +1,13 @@
+<!  #condicionma de si el producto ya es favorito del usuario o no y dependiendod e eso mostrar una cosa o otra-->
+<div id = 'favorite'>
+ 
+  <% if product.favorite%>
+    <%= link_to "❌", favorite_path(product.id) , data: {
+    turbo_method: :delete
+  }  %>
+  <%else%>
+    <%= link_to "💖", favorites_path(product_id: product.id), data: {
+    turbo_method: :post
+  }  %>
+  <% end %>
+</div>

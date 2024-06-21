@@ -1,0 +1,102 @@
+en:
+  authentication:
+    users:
+      create:
+        created: 'This user has been registered'
+    sessions:
+      destroy:
+        destroyed: 'Your session has been closed'
+      create:
+        created: 'Welcome!'
+        failed: 'invalid login!'
+  app_name: 'SellIT' 
+  meta_title: 'Buy and sell your products'
+  hello: "Hello world"
+  activerecord:
+    models:
+      product: Product
+      user: user
+      Category: category
+    attributes:
+      product:
+        title: 'Title'
+        description: 'Description'
+        price: 'Price'
+        photo: 'Photo'
+      user:
+        email: 'Email'
+        username: 'Username'
+        password: 'Password'
+      category:
+        name: 'name'
+        product:
+          attributes:
+            title:
+              blank: "can't be blank"
+            description:
+              blank: "can't be blank"
+            price:
+              blank: "can't be blank"
+  common:
+    confirm: 'Are you sure?'
+    back: 'Go back'
+    not_logged_in: 'You have to login your account'
+    not_authorized: 'Your account are not allowed to perform this action'
+    not_found: 'Not found'
+  shared:
+    header:
+      add: 'Add product'
+      login:  'Login'
+      register: 'Register'
+      logout: 'Logout'
+      favorites: 'Your favorites'
+  products:
+    edit:
+      title: 'Edit product'
+    new:
+      title: 'Add product'
+    index:
+      title: 'Products:'
+      all: 'All'
+      min_price: 'minimun price'
+      max_price: 'maximun price'
+      query_text: 'Search'
+      newest: 'Recently added'
+      cheapest: 'cheaper first'
+      expensives: 'expensive first'
+    show:
+      edit: 'Edit product'
+      delete: 'Delete product'
+      view_more_products: 'show more products of %{username}'
+      common:
+        not_found: 'You dont have an user '
+    create:
+      created: 'Your product has been successfully created'
+    update:
+      updated: 'Your product has been successfully updated'
+    destroy:
+      destroyed: 'Your product has been successfully destroyed'
+  categories:
+    category:
+      edit: 'Edit'
+      delete: 'Delete'
+    index:
+      title: 'Categories'
+      new: 'Add category'
+    edit:
+      title: 'Edit category'
+    create:
+      created: 'Your category has been successfully created'
+    update:
+      updated: 'Your category has been successfully updated'
+    destroy:
+      destroyed: 'Your category has been successfully destroyed'
+    new:
+      title: 'New category'
+  favorites:
+    index:
+      title: 'My favorite products'
+  user_mailer:
+    welcome:
+      subject: "Welcome to Sell IT"
+      welcome_message: "Hey %{username}, Welcome to Sellot,we hope you could sell a lot"

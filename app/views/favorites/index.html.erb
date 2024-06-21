@@ -1,0 +1,3 @@
+  <h1><%=t('.title')%></h1>  
+<!--#este turbo framte tag traera productos de products_path-->
+<%=turbo_frame_tag :products,src: products_path(favorites:true)%>

@@ -1,0 +1,94 @@
+es:
+  authentication:
+    users:
+      create:
+        created: 'Este usuario ha sido creada'
+    sessions:
+      create:
+        created: 'Bienvenido!'
+        failed: 'Login inválido!'
+      destroy:
+        destroyed: 'Tu sesión ha terminado! Hasta la próxima'
+  app_name: 'Vendelo'
+  meta_title: 'Compra y vende tus productos usados'
+  activerecord:
+    models:
+      product: producto
+      user: Usuario
+      category: categoria
+    attributes:
+      product:
+        title: 'Titulo'
+        description: 'Descripcion'
+        price: 'Precio'
+        photo: 'Foto'
+      user:
+        email: 'email'
+        username: 'Nombre de usuario'
+        password: 'contraseña'
+      category:
+        name: 'nombre'
+    
+  common:
+    confirm: 'Estas Seguro?'
+    back: 'Volver'
+    not_logged_in: 'Tiene que iniciar sesion en una cuenta para acceder a este contenido'
+    not_authorized: 'Este usuario no esta autorizado'
+    not_found: 'Not found'
+  shared:
+    header:
+      add: 'Agregar un producto'
+      login:  'Entrar a una sesion'
+      register: 'Registrarse'
+      logout: 'Cerrar sesion'
+      favorites: 'Tus favoritos'
+  products:
+    edit:
+      title: 'Editar producto'
+    new:
+      title: 'Añadir producto'
+    index:
+      title: 'Productos'
+      all: 'Todos los productos'
+      min_price: 'precio minimo'
+      max_price: 'precio maximo'
+      query_text: 'Busqueda'
+      newest: 'Recien agregados'
+      cheapest: 'Mas baratos'
+      expensives: 'Mas caros'
+    show:
+      edit: 'Editar producto'
+      delete: 'Borrar producto'
+      view_more_products: 'Ver más productos de %{username}'
+      common:
+        not_found: 'No tienes un usuario '
+    create:
+      created: 'tu producto ha sido creado'
+    update:
+      updated: 'tu producto ha sido actualizado'
+    destroy:
+      destroyed: 'tu producto ha sido eliminado'
+  categories:
+    category:
+      edit: 'Editar'
+      delete: 'Borrar'
+    index:
+      title: 'Categorías'
+      new: 'Añadir categoría'
+    edit:
+      title: 'Editar categoría'
+    create:
+      created: 'Tu categoría se ha creado correctamente'
+    update:
+      updated: 'Tu categoría se ha actualizado correctamente'
+    destroy:
+      destroyed: 'Tu categoría se ha eliminado correctamente'
+    new:
+      title: 'Añadir categoría'
+  favorites:
+    index:
+      title: 'Mis productos favoritos'
+  user_mailer:
+    welcome:
+      subject: "Bienvenido a vendelo"
+      welcome_message: "Hey %{username}, Bienvenido a vendelo esperamos que puedas vender muchas cosas"
